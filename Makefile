@@ -1,7 +1,7 @@
 CC=g++
 TARGET=ipxnet
 SRCFILES=main.cpp ipxserver.cpp
-LIBS=-lSDL_net
+LIBS=$(shell pkg-config --libs SDL_net)
 
 all: $(TARGET)
 
