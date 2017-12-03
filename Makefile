@@ -13,6 +13,7 @@ $(TARGET): $(SRCFILES)
 
 install: $(TARGET)
 	$(INSTALL) -m 755 -D $(TARGET) $(DESTDIR)$(PREFIX)/bin/$(TARGET)
+	$(INSTALL) -m 755 -D $(TARGET).service $(DESTDIR)/lib/systemd/system/$(TARGET).service
 
 clean:
 	rm -f $(TARGET) ipxnet.log
