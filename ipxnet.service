@@ -1,0 +1,16 @@
+[Unit]
+Description=DOSbox IPXnet Daemon
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=ipxnet
+Group=ipxnet
+ExecStart=/usr/local/bin/ipxnet 24169
+Restart=always
+PrivateTmp=yes
+PrivateDevices=yes
+ReadOnlyDirectories=/
+
+[Install]
+WantedBy=multi-user.target
