@@ -1,7 +1,7 @@
 CC=g++
 TARGET=ipxnet
 SRCFILES=main.cpp ipxserver.cpp
-LIBS=-lSDL_net
+LIBS=-lSDL_net -lSDL -lX11 -lpthread
 
 all: $(TARGET)
 
