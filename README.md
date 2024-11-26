@@ -1,9 +1,8 @@
 ipxnet
 ======
 
-host an stand alone ipx network over tcp for old dos games running in dosbox
+Host a standalone IPX network over UDP for old DOS games running in Dosbox.
 
-update the config file path in config.h
+Update the config file path in config.h.
 
-check dosbox documentation for more info (this code is basically yanked from dosbox with stability changes)
-
+Check Dosbox documentation for more info (this code is basically yanked from Dosbox with stability changes).
